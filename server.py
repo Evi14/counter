@@ -34,7 +34,7 @@ def view_count():
 @app.route("/destroy_session")
 def destroy():
     session.clear()
-    # session.pop('count')
+    session.pop('count')
     return redirect("/")
     
 if __name__ == "__main__":
